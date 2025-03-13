@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-   
+
 
     var fpsElement = document.createElement('div');
     fpsElement.id = 'fps';
@@ -205,20 +205,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         step();
     })();
-    
-    
-    
+
+
+
     //pop('./static/img/tz.jpg')
-    
-    
-    
+
+
+
 });
 
 
 
 
-var pageLoading = document.querySelector("#zyyo-loading");
-window.addEventListener('load', function() {
+var pageLoading = document.querySelector("#cloud-loading");
+window.addEventListener('load', function () {
     setTimeout(function () {
         pageLoading.style.opacity = '0';
     }, 100);

@@ -59,9 +59,9 @@ a:focus {
 
 
 html[data-theme="Dark"] {
-    
+
     --main_text_color: #fff;
-    --gradient:linear-gradient(120deg, rgb(133, 62, 255), #f76cc6 30%, rgb(255, 255, 255) 60%);
+    --gradient: linear-gradient(120deg, rgb(133, 62, 255), #f76cc6 30%, rgb(255, 255, 255) 60%);
     --purple_text_color: #747bff;
     --text_bg_color: rgb(26, 4, 48);
     --item_bg_color: rgb(19, 20, 24);
@@ -73,7 +73,7 @@ html[data-theme="Dark"] {
     --card_filter: 0px;
     --back_filter: 0px;
     --back_filter_color: #000000;
-    --fill:#ffffff;
+    --fill: #ffffff;
 }
 
 
@@ -86,7 +86,7 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    font-family: "b",  "a", sans-serif;
+    font-family: "b", "a", sans-serif;
     background: var(--main_bg_color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +97,7 @@ body {
 
 }
 
-#zyyo-loading {
+#cloud-loading {
     background: radial-gradient(white, #d8eaff);
     background-size: 100%;
     background-position: center;
@@ -117,7 +117,7 @@ body {
 
 
 
-#zyyo-loading-center {
+#cloud-loading-center {
     height: 150px;
     width: 150px;
     position: relative;
@@ -146,18 +146,18 @@ body {
 
 
 
-.zyyo-filter {
+.cloud-filter {
     position: fixed;
     width: 100%;
     height: 100%;
     background: var(--back_filter_color);
-    backdrop-filter:  blur(var(--back_filter));
+    backdrop-filter: blur(var(--back_filter));
     -webkit-backdrop-filter: blur(var(--back_filter));
     z-index: -99999999;
-   
+
 }
 
-.zyyo-main {
+.cloud-main {
     width: 100%;
     margin: 0 auto;
     transition: transform 0.5s ease;
@@ -168,7 +168,7 @@ body {
 }
 
 
-.zyyo-left {
+.cloud-left {
     overflow-y: scroll;
     width: 230px;
     height: 100vh;
@@ -182,7 +182,7 @@ body {
 }
 
 
-.zyyo-left::-webkit-scrollbar {
+.cloud-left::-webkit-scrollbar {
     display: none;
 }
 
@@ -225,13 +225,15 @@ body {
     overflow: hidden;
 }
 
-.left-des-item i,.left-des-item svg{
+.left-des-item i,
+.left-des-item svg {
     width: 16px;
     height: 16px;
-    fill:var(--fill);
-   font-size: 18px;
+    fill: var(--fill);
+    font-size: 18px;
     margin-right: 10px;
 }
+
 .left-tag {
     display: flex;
     flex-direction: row;
@@ -294,14 +296,15 @@ body {
 
 
 
-.zyyo-right {
+.cloud-right {
     width: calc(100% - 230px);
     display: flex;
     padding: 20px;
-  position: relative;
+    position: relative;
     padding-bottom: 50px;
     flex-direction: column;
 }
+
 .welcome {
 
     font-size: 65px;
@@ -320,6 +323,7 @@ body {
     border-radius: 50%;
     border: 0.5px solid #ffffff;
 }
+
 .description {
 
     font-size: 20px;
@@ -336,7 +340,7 @@ body {
     background-position: 0%;
     font-family: "title";
     animation: backgroundSizeAnimation 10s ease-in-out infinite;
-      background-image:  var(--gradient);
+    background-image: var(--gradient);
 }
 
 @keyframes backgroundSizeAnimation {
@@ -408,13 +412,16 @@ body {
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     flex-shrink: 0;
 }
-.iconItem i,.iconItem svg{
+
+.iconItem i,
+.iconItem svg {
     width: 22px;
     height: 22px;
-    fill:var(--fill);
+    fill: var(--fill);
     font-size: 22px;
-     margin-right: 3px;
+    margin-right: 3px;
 }
+
 .switch {
     width: 55px;
     height: 43px;
@@ -422,7 +429,8 @@ body {
     border-radius: 7px;
     display: flex;
     margin-left: 10px;
-    backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
+    backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
 
     align-items: center;
@@ -475,12 +483,15 @@ body {
     margin: 20px 0;
     transition: transform 0.4s ease;
 }
-.title i ,.title svg{
+
+.title i,
+.title svg {
     margin-right: 8px;
     height: 26px;
     width: 26px;
-   fill:var(--fill);
+    fill: var(--fill);
 }
+
 .title:hover {
     transform: translateY(-5px);
 }
@@ -498,8 +509,10 @@ body {
     padding: 15px;
     height: 95px;
     width: calc(25% - 15px);
-    backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
-    -webkit-backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
+    backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
     transition: opacity 0.3s ease, background-color 0.3s ease, border 0.3s ease, transform 0.2s ease;
 
 
@@ -512,7 +525,8 @@ body {
     padding: 15px;
     height: 100px;
     width: calc(25% - 15px);
-    backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
+    backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
     transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
 
 }
@@ -625,9 +639,11 @@ footer {
     .a {
         width: calc(50% - 20px);
     }
-.projectItem{
-    margin: 10px;
-}
+
+    .projectItem {
+        margin: 10px;
+    }
+
     .b {
 
         width: calc(50% - 20px);
@@ -637,7 +653,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .zyyo-left {
+    .cloud-left {
         display: none;
     }
 
@@ -658,7 +674,7 @@ footer {
     .a {
 
         width: calc(50% - 18px);
-  margin: 9px;
+        margin: 9px;
 
     }
 
@@ -670,7 +686,7 @@ footer {
 
 
 
-    .zyyo-right {
+    .cloud-right {
         width: 100%;
     }
 
@@ -687,14 +703,17 @@ footer {
         margin: 2vw 0;
 
     }
-    .iconContainer {
-  
-     margin-top: 4vw;
 
-}
-.projectItem{
-    padding: 10px;
-}
+    .iconContainer {
+
+        margin-top: 4vw;
+
+    }
+
+    .projectItem {
+        padding: 10px;
+    }
+
     .projectItemLeft p {
         font-size: 13px;
     }
@@ -738,7 +757,7 @@ footer {
 
 .tc {
     position: fixed;
-   
+
     display: flex;
     visibility: hidden;
     width: 100vw;
@@ -755,7 +774,7 @@ footer {
 
 .tc-main {
     z-index: 100000;
-    
+
     width: 80%;
     max-width: 300px;
     min-height: 200px;
